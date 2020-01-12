@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <style>
+        .block-1 {
+            position: fixed;
+            left: 0;
+            top: 25;
+            width: 50%;
+            height: 100%;
+            background: blue;
+            color: #fff;
+            overflow: auto;
+        }
+
+        .block-1 img {
+            height: auto;
+            width: 100%;
+        }
+
+        .exmpl {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .block-2 {
+            position: fixed;
+            right: 0;
+            top: 25;
+            width: 50%;
+            height: 100%;
+            background: green;
+            color: #fff;
+            overflow: auto;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <div>
+        <form method="POST" enctype="multipart/form-data" action="/upload">
+            <table>
+                <tr>
+                    <td>File to upload:</td>
+                    <td><input type="file" name="file"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Upload"/></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="block-1 exmpl">
+        <img th:src="@{'/img/' + ${serverName}}">
+    </div>
+
+    <div class="block-2">
+<!--        <h2 th:text="${serverName}"/>-->
+        <h2 th:text="@{'File Name is: ' + ${serverName}}"/>
+        <h2 th:text="@{'Hash file Name is: ' + ${hash}}"/>
+    </div>
+
+</head>
+<body>
+
+</body>
+</html>

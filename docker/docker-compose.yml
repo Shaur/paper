@@ -1,0 +1,25 @@
+version: '3.7'
+services:
+  postgres:
+    build:
+      context: comics-postgres
+    container_name: comics_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: comics
+      POSTGRES_PASSWORD: comics
+    ports:
+      - 5432:5432
+  adminer:
+    image: adminer:4.7.5
+    container_name: comics_adminer
+    restart: always
+    ports:
+      - 8180:8080
+  app:
+    build:
+      context: main-app
+    container_name: comics_ocr
+    restart: always
+    ports:
+    - 8080:8080
