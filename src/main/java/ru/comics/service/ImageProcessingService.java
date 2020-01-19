@@ -2,6 +2,7 @@ package ru.comics.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.codec.multipart.FilePart;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import ru.comics.ocr.service.OcrProcessingService;
@@ -27,7 +28,8 @@ public class ImageProcessingService {
 
     public ImageProcessingService(@Value("${upload.path}") String uploadPath,
                                   OcrProcessingService ocrProcessingService,
-                                  EnRuWordRepository enRuWordRepository) {
+                                  EnRuWordRepository enRuWordRepository
+    ) {
         this.uploadDir = new File(uploadPath);
         this.ocrProcessingService = ocrProcessingService;
         this.enRuWordRepository = enRuWordRepository;
@@ -37,30 +39,26 @@ public class ImageProcessingService {
         }
     }
     
-    public List<Translate> process(MultipartFile multipartFile) {
-        Path storeFile = storeFile(multipartFile);
-        if(storeFile != null) {
-            var words = recogniseFile(storeFile);
-            return enRuWordRepository.findAllByWordIn(words);
-        }
-        
-        return Collections.emptyList();
-    }
+//    public List<Translate> process(MultipartFile multipartFile) {
+//        Path storeFile = storeFile(multipartFile);
+//        if(storeFile != null) {
+//            var words = recogniseFile(storeFile);
+//            return enRuWordRepository.findAllByWordIn(words);
+//        }
+//        
+//        return Collections.emptyList();
+//    }
 
     private Collection<String> recogniseFile(Path filePath) {
         return ocrProcessingService.process(filePath);
     }
 
-    private Path storeFile(MultipartFile multipartFile) {
-        String originalFilename = multipartFile.getOriginalFilename();
-        Path pathToFile = uploadDir.toPath().resolve(originalFilename);
-        try {
-            Files.copy(multipartFile.getInputStream(), pathToFile, StandardCopyOption.REPLACE_EXISTING);
-            return pathToFile;
-        } catch (IOException ex) {
-            log.warn("File {} can not be saved. Reason: {}", originalFilename, ex);
-        }
+    public Path storeFile(FilePart multipartFile) {
+        String originalFilename = multipartFile.filename();
         
-        return null;
+        Path pathToFile = uploadDir.toPath().resolve(originalFilename);
+        multipartFile.transferTo(pathToFile);
+        
+        return pathToFile;
     }
 }

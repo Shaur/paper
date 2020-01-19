@@ -12,6 +12,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="build" target="1.5" />
       <module name="comica-ocr.main" target="11" />
       <module name="comica-ocr.test" target="11" />
       <module name="comix.main" target="11" />

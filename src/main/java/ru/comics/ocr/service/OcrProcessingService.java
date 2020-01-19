@@ -5,6 +5,7 @@ import net.sourceforge.tess4j.TesseractException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.awt.image.BufferedImage;
 import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.Collection;
@@ -21,13 +22,24 @@ public class OcrProcessingService {
         this.tesseract = tesseract;
     }
     
-    public String ocr(Path filePath) {
+    private String ocr(Path filePath) {
         try {
             return tesseract.doOCR(filePath.toFile());
         } catch (TesseractException e) {
             e.printStackTrace();
         }
 
+        return "";
+    }
+
+
+    private String ocr(BufferedImage img) {
+        try {
+            return tesseract.doOCR(img);
+        } catch (TesseractException e) {
+            e.printStackTrace();
+        }
+        
         return "";
     }
     
@@ -47,4 +59,10 @@ public class OcrProcessingService {
         var ocr = ocr(filePath);
         return ocrResultProcessing(ocr);
     }
+    
+    public Collection<String> process(BufferedImage img) {
+        var ocr = ocr(img);
+        return ocrResultProcessing(ocr);
+    }
+
 }
