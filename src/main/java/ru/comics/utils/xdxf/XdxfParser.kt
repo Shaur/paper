@@ -15,7 +15,18 @@ object XdxfParser {
     }
 
     private fun clearXdxf(xdfx: Xdxf): Xdxf {
-        val translate = xdfx.translate.replace(xdfx.word, "").trim()
-        return Xdxf(xdfx.word, translate)
+        val translate = xdfx.translate
+                .replace(xdfx.word, "")
+                .trim()
+                .toLowerCase()
+        
+        val firstQuote = translate.indexOf("\"")
+        val lastQuote = translate.lastIndexOf("\"")
+
+        var substring = translate
+        if (firstQuote != -1 && lastQuote != -1)
+            substring = translate.substring(firstQuote + 1, lastQuote)
+
+        return Xdxf(xdfx.word, substring)
     }
 }
