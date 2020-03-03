@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: comics
+    password: comics
+    url: jdbc:postgresql://postgres:5432/comics?createDatabaseIfNotExist=true
+  jpa:
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non-contextual-creation: true
+  servlet:
+    multipart:
+      max-file-size: 4096KB
+      max-request-size: 4096KB
+upload:
+  path: upload

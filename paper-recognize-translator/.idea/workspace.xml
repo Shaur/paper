@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="96bad2d5-3bc5-4c65-b9d5-c9630cade540" name="Default Changelist" comment="reword dictionary">
+      <change beforePath="$PROJECT_DIR$/docker/comics-postgres/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/comics-dev-env/comics-postgres/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/comics-dev-env/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/main-app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/comics-dev-env/main-app/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/main-app/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/comics-dev-env/main-app/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/main-app/eng.traineddata" beforeDir="false" afterPath="$PROJECT_DIR$/comics-dev-env/main-app/eng.traineddata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/comics/configuration/ChannelInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/comics/controller/ImageRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/comics/controller/ImageRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/comics/ocr/service/OcrProcessingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/comics/service/OcrProcessingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/comics/ocr/service/PreprocessingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/comics/service/PreprocessingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/comics/service/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/comics/service/ImageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/comics/service/TranslationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/comics/service/TranslationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/comics/translater/entity/EnRuWordPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/comics/entity/EnRuWordPair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/comics/translater/repository/EnRuWordRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/comics/repository/EnRuWordRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/comics/translater/transfer/Translate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/comics/transfer/TranslateDto.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="comics-ocr" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="comics-ocr" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="comics-ocr" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="ProjectId" id="1VsmveiA6wcOjYvVXk8GVBOvkRh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/comics-dev-env/main-app" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reactor" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="ru.comics.util.xdxf" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Develop\paper\comics-dev-env\main-app" />
+      <recent name="D:\Develop\paper\docker\main-app" />
+      <recent name="D:\Develop\paper\docker\test" />
+      <recent name="D:\Develop\paper-new\docker\main-app" />
+      <recent name="D:\Develop\paper-new\docker\main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.comics-dev-env: Compose Deployment">
+    <configuration name="paper [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="paper [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="comics-ocr.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.comics.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Docker_no-adminer_start" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="commandLineOptions" value="--build" />
+          <option name="services">
+            <list>
+              <option value="app" />
+              <option value="postgres" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="comics-dev-env: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="commandLineOptions" value="--build" />
+          <option name="sourceFilePath" value="comics-dev-env/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="comics-dev-env.app: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="app" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="comics-dev-env/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker.app: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="app" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.Docker_no-adminer_start" />
+      <item itemvalue="Docker.docker.app: Compose Deployment" />
+      <item itemvalue="Docker.comics-dev-env: Compose Deployment" />
+      <item itemvalue="Docker.comics-dev-env.app: Compose Deployment" />
+      <item itemvalue="Gradle.paper [clean]" />
+      <item itemvalue="Gradle.paper [build]" />
+      <item itemvalue="Spring Boot.Application" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.comics-dev-env: Compose Deployment" />
+        <item itemvalue="Docker.comics-dev-env.app: Compose Deployment" />
+        <item itemvalue="Gradle.paper [build]" />
+        <item itemvalue="Gradle.paper [clean]" />
+        <item itemvalue="Docker.docker.app: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.12770563" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="96bad2d5-3bc5-4c65-b9d5-c9630cade540" name="Default Changelist" comment="" />
+      <created>1578050408720</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578050408720</updated>
+    </task>
+    <task id="LOCAL-00001" summary="rework to monolith">
+      <created>1578849181276</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578849181276</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added: WebFlux and simple image preprocessing">
+      <created>1579423851482</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579423851482</updated>
+    </task>
+    <task id="LOCAL-00003" summary="reword dictionary">
+      <created>1580835758911</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580835758911</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="BRANCHES_LOG">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="rework to monolith" />
+    <MESSAGE value="added: WebFlux and simple image preprocessing" />
+    <MESSAGE value="reword dictionary" />
+    <option name="LAST_COMMIT_MESSAGE" value="reword dictionary" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="244" key="#Plugins" timestamp="1578766133966">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="552" y="244" key="#Plugins/0.0.1920.1170@0.0.1920.1170" timestamp="1578766133966" />
+    <state x="542" y="289" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581152137893">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="542" y="289" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1170@0.0.1920.1170" timestamp="1581152137893" />
+    <state x="722" y="388" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579970246465">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="722" y="388" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1170@0.0.1920.1170" timestamp="1579970246465" />
+    <state x="765" y="302" key="#com.intellij.ide.util.MemberChooser" timestamp="1579334238295">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="765" y="302" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1170@0.0.1920.1170" timestamp="1579334238295" />
+    <state x="808" y="475" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1578130227040">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="808" y="475" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1170@0.0.1920.1170" timestamp="1578130227040" />
+    <state x="540" y="241" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1578129977570">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="540" y="241" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.1920.1170@0.0.1920.1170" timestamp="1578129977570" />
+    <state x="664" y="511" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1581156346329">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="664" y="511" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1170@0.0.1920.1170" timestamp="1581156346328" />
+    <state x="756" y="445" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1579345944753">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="756" y="445" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1170@0.0.1920.1170" timestamp="1579345944753" />
+    <state x="645" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579797460953">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="645" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1170@0.0.1920.1170" timestamp="1579797460953" />
+    <state x="690" y="333" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580835442860">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="690" y="333" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1170@0.0.1920.1170" timestamp="1580835442860" />
+    <state x="679" y="307" key="#docker:_Compose_Deployment" timestamp="1578297824025">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="679" y="307" key="#docker:_Compose_Deployment/0.0.1920.1170@0.0.1920.1170" timestamp="1578297824025" />
+    <state x="739" y="238" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1578129424689">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="739" y="238" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1920.1170@0.0.1920.1170" timestamp="1578129424689" />
+    <state x="520" y="181" key="CommitChangelistDialog2" timestamp="1579423849995">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="520" y="181" key="CommitChangelistDialog2/0.0.1920.1170@0.0.1920.1170" timestamp="1579423849995" />
+    <state x="926" y="523" key="DockerComposeFileDialog" timestamp="1578388046170">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="926" y="523" key="DockerComposeFileDialog/0.0.1920.1170@0.0.1920.1170" timestamp="1578388046170" />
+    <state x="761" y="408" key="FileChooserDialogImpl" timestamp="1580835273360">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="761" y="408" key="FileChooserDialogImpl/0.0.1920.1170@0.0.1920.1170" timestamp="1580835273360" />
+    <state width="1877" height="444" key="GridCell.Tab.0.bottom" timestamp="1581152139931">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state width="1877" height="444" key="GridCell.Tab.0.bottom/0.0.1920.1170@0.0.1920.1170" timestamp="1581152139931" />
+    <state width="1877" height="444" key="GridCell.Tab.0.center" timestamp="1581152139931">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state width="1877" height="444" key="GridCell.Tab.0.center/0.0.1920.1170@0.0.1920.1170" timestamp="1581152139931" />
+    <state width="1877" height="444" key="GridCell.Tab.0.left" timestamp="1581152139931">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state width="1877" height="444" key="GridCell.Tab.0.left/0.0.1920.1170@0.0.1920.1170" timestamp="1581152139931" />
+    <state width="1877" height="444" key="GridCell.Tab.0.right" timestamp="1581152139931">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state width="1877" height="444" key="GridCell.Tab.0.right/0.0.1920.1170@0.0.1920.1170" timestamp="1581152139931" />
+    <state width="1877" height="444" key="GridCell.Tab.1.bottom" timestamp="1581151160130">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state width="1877" height="444" key="GridCell.Tab.1.bottom/0.0.1920.1170@0.0.1920.1170" timestamp="1581151160130" />
+    <state width="1877" height="444" key="GridCell.Tab.1.center" timestamp="1581151160130">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state width="1877" height="444" key="GridCell.Tab.1.center/0.0.1920.1170@0.0.1920.1170" timestamp="1581151160130" />
+    <state width="1877" height="444" key="GridCell.Tab.1.left" timestamp="1581151160130">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state width="1877" height="444" key="GridCell.Tab.1.left/0.0.1920.1170@0.0.1920.1170" timestamp="1581151160130" />
+    <state width="1877" height="444" key="GridCell.Tab.1.right" timestamp="1581151160130">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state width="1877" height="444" key="GridCell.Tab.1.right/0.0.1920.1170@0.0.1920.1170" timestamp="1581151160130" />
+    <state x="461" y="228" key="SettingsEditor" timestamp="1579939700869">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="461" y="228" key="SettingsEditor/0.0.1920.1170@0.0.1920.1170" timestamp="1579939700869" />
+    <state x="552" y="319" key="Vcs.Push.Dialog.v2" timestamp="1580835761346">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="552" y="319" key="Vcs.Push.Dialog.v2/0.0.1920.1170@0.0.1920.1170" timestamp="1580835761346" />
+    <state x="846" y="481" width="326" height="241" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1580032260225">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="846" y="481" width="326" height="241" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1170@0.0.1920.1170" timestamp="1580032260225" />
+    <state x="832" y="481" width="295" height="208" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog" timestamp="1580032047050">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="832" y="481" width="295" height="208" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog/0.0.1920.1170@0.0.1920.1170" timestamp="1580032047050" />
+    <state x="664" y="479" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1578129097232">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="664" y="479" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1170@0.0.1920.1170" timestamp="1578129097232" />
+    <state x="769" y="503" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578849437599">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="769" y="503" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1170@0.0.1920.1170" timestamp="1578849437599" />
+    <state x="656" y="183" width="607" height="804" key="find.popup" timestamp="1579334277290">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="656" y="183" width="607" height="804" key="find.popup/0.0.1920.1170@0.0.1920.1170" timestamp="1579334277290" />
+    <state width="732" height="532" key="javadoc.popup.new" timestamp="1579422447049">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state width="732" height="532" key="javadoc.popup.new/0.0.1920.1170@0.0.1920.1170" timestamp="1579422447049" />
+    <state x="616" y="273" width="672" height="677" key="run.anything.popup" timestamp="1579935751673">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="616" y="273" width="672" height="677" key="run.anything.popup/0.0.1920.1170@0.0.1920.1170" timestamp="1579935751673" />
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1580835557438">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.0.1920.1170@0.0.1920.1170" timestamp="1580835557438" />
+  </component>
+</project>

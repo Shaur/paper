@@ -1,0 +1,30 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.subscribe-col {
+  width: 100px;
+  text-align: center;
+}
+
+.subscribe-col {
+  width: 100px;
+  text-align: center;
+}
+
+.pageCounter {
+  text-align: center;
+}
+
+.reader {
+  text-align: center;
+}
+
+img.page {
+  height: 90vh;
+}
