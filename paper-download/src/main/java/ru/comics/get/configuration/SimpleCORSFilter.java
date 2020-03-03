@@ -12,7 +12,7 @@ import java.io.IOException;
 @Order(Ordered.HIGHEST_PRECEDENCE)
 public class SimpleCORSFilter implements Filter {
 
-    private static final String ACCESS_CONTROL_ALLOW_HEADERS = "x-requested-with,authorization,content-type,access-control-request-headers,access-control-request-method,accept,origin,authorization";
+    private static final String ACCESS_CONTROL_ALLOW_HEADERS = "x-requested-with,authorization,content-type,access-control-request-headers,access-control-request-method,accept,origin,authorization,bearer";
 
     public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException {
         HttpServletResponse response = (HttpServletResponse) res;
