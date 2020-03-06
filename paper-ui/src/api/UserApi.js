@@ -1,5 +1,3 @@
-import axios from 'axios'
-
 const AUTH_URL = `${process.env.REACT_APP_URL}/users/sessions`;
 
 class UserApi {
@@ -9,14 +7,21 @@ class UserApi {
             password: password
         };
 
-        return axios.post(AUTH_URL, payload)
-            .then((resp) => {
-                console.log(resp);
-                localStorage.setItem("token", resp.data.token.value);
-                return resp.status;
+        return fetch(AUTH_URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8'
+            },
+            body: JSON.stringify(payload)
+        })
+            .then(resp => {
+                return resp.json();
             })
-            .catch((error) => {
-                return error.code;
+            .then(resp => {
+                if (resp.token !== undefined)
+                    localStorage.setItem("token", resp.token.value);
+                else
+                    throw resp;
             });
     }
 }

@@ -30,7 +30,7 @@ public class WeeklyComicsJob {
         this.weeklyComicsService = weeklyComicsService;
     }
 
-    @Scheduled(cron = "0 */2 * ? * *")
+//    @Scheduled(cron = "0 * * ? * *")
     public void checkWeekly() {
         var weeklyComicsList = ComicsMetaUtil.getWeeklyComicsList(LocalDate.now());
         for (var weeklyComics : weeklyComicsList) {
@@ -67,7 +67,7 @@ public class WeeklyComicsJob {
         }
     }
 
-    @Scheduled(cron = "0 */5 * ? * *")
+//    @Scheduled(cron = "0 * * ? * *")
     public void downloadSubscription() {
         log.info("Download issues start");
         weeklyComicsService.downloadSubscribedIssues();

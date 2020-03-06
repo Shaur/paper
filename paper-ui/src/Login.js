@@ -11,16 +11,17 @@ class Login extends React.Component {
         super(props);
         this.state = {
             userName: '',
-            password: ''
+            password: '',
+            error: ''
         }
     }
 
     handleClick = (event) => {
         UserApi.auth(this.state.userName, this.state.password)
-            .then(status => {
-                if(status === 200)
-                    this.props.history.push('/');
-            });
+            .then(() => {
+                this.props.history.push('/');
+            })
+            .catch(error => this.setState({error: error.message}));
     };
 
     render() {
@@ -42,6 +43,8 @@ class Login extends React.Component {
                         />
                         <br/>
                         <RaisedButton label="Submit" primary={true} onClick={(event) => this.handleClick(event)}/>
+                        <br/>
+                        <label className={'label-danger'}>{this.state.error}</label>
                     </div>
                 </MuiThemeProvider>
             </div>

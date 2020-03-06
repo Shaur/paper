@@ -3,6 +3,7 @@ package ru.comics.get.controller;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+import ru.comics.get.auth.exception.AuthenticationException;
 import ru.comics.get.repository.IssueRepository;
 import ru.comics.get.repository.SeriesRepository;
 import ru.comics.get.transfer.IssueDto;
@@ -34,6 +35,7 @@ public class WeeklyIssueController {
     }
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    @ExceptionHandler(AuthenticationException.class)
     @Transactional
     public Collection<IssueDto> getAll(@RequestParam(required = false) String date) {
         LocalDate localDate = (date == null) ? LocalDate.now() : LocalDate.parse(date, DateTimeFormatter.ISO_DATE_TIME);
@@ -55,6 +57,7 @@ public class WeeklyIssueController {
     }
 
     @GetMapping("{id}")
+    @ExceptionHandler(AuthenticationException.class)
     public void subscribe(@PathVariable Long id, @RequestParam Boolean subscribe) {
         issueRepository.findById(id).ifPresent(i -> {
             var series = i.getSeries();

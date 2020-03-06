@@ -21,10 +21,8 @@ public class SessionController {
     }
 
     @PostMapping("/sessions")
-    @ExceptionHandler(AuthenticationException.class)
-    public ResponseEntity<UserTokenDto> issueToken(@RequestBody CredentialsDto credentials) {
-        var userTokenDto = userService.authenticate(credentials);
-        return new ResponseEntity<>(userTokenDto, HttpStatus.OK);
+    public UserTokenDto issueToken(@RequestBody CredentialsDto credentials) {
+        return userService.authenticate(credentials);
     }
 
     @DeleteMapping("/sessions")
