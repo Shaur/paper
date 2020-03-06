@@ -16,7 +16,7 @@ class UserApi {
                 return resp.status;
             })
             .catch((error) => {
-                console.log(error);
+                return error.code;
             });
     }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import IssueApi from "./api/IssueApi";
 
 class IssueCard extends React.Component {
     constructor(props) {
@@ -17,7 +18,7 @@ class IssueCard extends React.Component {
     onSubscribe(event) {
         const target = event.target;
         const value = target.type === 'checkbox' ? target.checked : target.value;
-        fetch(`${process.env.REACT_APP_URL}/issue/${this.state.id}?subscribe=${value}`)
+        IssueApi.subscribe(this.state.issueId, value)
             .then(() => this.setState({subscribe: value}));
 
     }

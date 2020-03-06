@@ -49,13 +49,7 @@ public class SearchIssueFileRequest {
 
         String newUrl = connection.getHeaderField("location");
 
-        try(InputStream is = (new URL(newUrl)).openStream()) {
-            return is; 
-        } catch (Exception ex) {
-            log.error("Can't open stream to download. Reason: ", ex);
-        }
-        
-        return null;
+        return (new URL(newUrl)).openStream();
     }
 
     private String cleanupTitle() {

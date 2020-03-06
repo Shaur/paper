@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ru.comics.get.auth.dto.CredentialsDto;
 import ru.comics.get.auth.dto.UserTokenDto;
+import ru.comics.get.auth.exception.AuthenticationException;
 import ru.comics.get.auth.service.UserService;
 
 @RestController
@@ -20,6 +21,7 @@ public class SessionController {
     }
 
     @PostMapping("/sessions")
+    @ExceptionHandler(AuthenticationException.class)
     public ResponseEntity<UserTokenDto> issueToken(@RequestBody CredentialsDto credentials) {
         var userTokenDto = userService.authenticate(credentials);
         return new ResponseEntity<>(userTokenDto, HttpStatus.OK);

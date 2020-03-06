@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import ru.comics.get.auth.dto.CredentialsDto;
 import ru.comics.get.auth.dto.UserTokenDto;
 import ru.comics.get.auth.dto.user.CreateUserRequestDto;
@@ -56,6 +57,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @ExceptionHandler(AuthenticationException.class)
     public User verify(String tokenValue) {
         Token token = tokenRepository.findById(tokenValue)
                 .orElseThrow(() -> new AuthenticationException("Invalid token value"));

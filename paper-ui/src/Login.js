@@ -18,7 +18,8 @@ class Login extends React.Component {
     handleClick = (event) => {
         UserApi.auth(this.state.userName, this.state.password)
             .then(status => {
-                console.log(status);
+                if(status === 200)
+                    this.props.history.push('/');
             });
     };
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Page from "./Page";
+import ReaderApi from './api/ReaderApi'
 
 class Reader extends React.Component {
 
@@ -15,8 +16,7 @@ class Reader extends React.Component {
     }
     
     componentDidMount() {
-        fetch(`${process.env.REACT_APP_URL}/reader/read/${this.state.series}/${this.state.number}`)
-            .then(response => response.json())
+        ReaderApi.pages(this.state.series, this.state.number)
             .then(pages => this.setState({sources: pages}))
     }
 

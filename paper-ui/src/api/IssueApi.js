@@ -11,6 +11,16 @@ class IssueApi {
             }
         });
     }
+    
+    static subscribe(issueId, subscription) {
+        return fetch(`${process.env.REACT_APP_URL}/issue/${issueId}?subscribe=${subscription}`, {
+            headers: {
+                'Authorization': 'Bearer ' + localStorage.getItem('token'),
+            }
+        }).catch((error) => {
+            this.props.history.push("/login")
+        });
+    }
 }
 
 export default IssueApi
