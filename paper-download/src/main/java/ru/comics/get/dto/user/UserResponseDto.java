@@ -1,8 +1,8 @@
 package ru.comics.get.dto.user;
 
 import lombok.Data;
-import ru.comics.get.auth.model.User;
-import ru.comics.get.auth.model.UserRole;
+import ru.comics.get.security.model.User;
+import ru.comics.get.security.model.UserRole;
 
 @Data
 public class UserResponseDto {

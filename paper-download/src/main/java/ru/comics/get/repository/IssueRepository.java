@@ -16,6 +16,6 @@ public interface IssueRepository extends JpaRepository<Issue, Long> {
     
     Optional<Issue> findFirstBySeriesAndAndNumber(Series series, Double number);
     
-    @Query("select i from Issue i join i.series s where s.subscribe = true and i.downloaded = false")
-    List<Issue> getSubscribedIssues();
+    @Query("select i from Issue i where i.downloaded = false")
+    List<Issue> getNotDownloadedIssues();
 }

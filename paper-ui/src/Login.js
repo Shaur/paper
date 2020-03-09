@@ -12,7 +12,7 @@ class Login extends React.Component {
         this.state = {
             userName: '',
             password: '',
-            error: ''
+            error: this.props.location.state.error
         }
     }
 

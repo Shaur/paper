@@ -9,6 +9,11 @@ class IssueApi {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('token'),
             }
+        }).then(response => {
+            if (response.status === 200)
+                return response.json();
+            else
+                throw response.json().then;
         });
     }
     
@@ -17,8 +22,9 @@ class IssueApi {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('token'),
             }
-        }).catch((error) => {
-            this.props.history.push("/login")
+        }).then(resp => {
+            if(resp.status !== 200)
+                throw resp.json();
         });
     }
 }

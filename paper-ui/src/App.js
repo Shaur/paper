@@ -16,16 +16,13 @@ class App extends React.Component {
 
     componentDidMount() {
         IssueApi.issuesToday()
-            .then(response => {
-                if (!response.ok)
-                    this.props.history.push('/login');
-                return response.json();
-            })
             .then(issues => this.setState({issues: issues}))
             .catch(error => {
-                this.props.history.push('/login');
-                console.log(error);
-            })
+                this.props.history.push({
+                    pathname: '/login',
+                    state: {error: error.message}
+                });
+            });
     }
 
     dateChange = date => {

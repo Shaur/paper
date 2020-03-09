@@ -23,6 +23,7 @@ public class Issue {
     
     private LocalDate publicationDate;
     
+    @Builder.Default
     private boolean downloaded = false;
     
     @ManyToOne

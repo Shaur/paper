@@ -34,7 +34,7 @@ public class WeeklyComicsService {
     }
 
     public void downloadSubscribedIssues() {
-        issueRepository.getSubscribedIssues().stream()
+        issueRepository.getNotDownloadedIssues().stream()
                 .filter(issue -> !DOWNLOAD_QUEUE.contains(issue.getId()))
                 .peek(issue -> DOWNLOAD_QUEUE.add(issue.getId()))
                 .map(DownloadTask::new)

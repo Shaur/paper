@@ -18,6 +18,12 @@ class Reader extends React.Component {
     componentDidMount() {
         ReaderApi.pages(this.state.series, this.state.number)
             .then(pages => this.setState({sources: pages}))
+            .catch(error => {
+                this.props.history.push({
+                   pathname: '/login',
+                   state: {error: error.message} 
+                });
+            })
     }
 
     onNext = () => {

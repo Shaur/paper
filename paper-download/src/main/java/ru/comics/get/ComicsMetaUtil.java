@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import lombok.Data;
 import org.jsoup.Jsoup;
 import org.jsoup.select.Elements;
-import ru.comics.get.transfer.IntegrationIssueDto;
+import ru.comics.get.dto.comics.IntegrationIssueDto;
 
 import java.io.IOException;
 import java.net.URI;

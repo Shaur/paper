@@ -2,8 +2,8 @@ package ru.comics.get.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
-import ru.comics.get.auth.dto.user.CreateUserRequestDto;
-import ru.comics.get.auth.service.UserService;
+import ru.comics.get.security.dto.user.CreateUserRequestDto;
+import ru.comics.get.security.service.UserService;
 import ru.comics.get.dto.user.UserResponseDto;
 
 import javax.validation.Valid;

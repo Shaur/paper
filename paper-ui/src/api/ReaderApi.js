@@ -5,9 +5,12 @@ class ReaderApi {
                 'Authorization': 'Bearer ' + localStorage.getItem('token'),
             }
         })
-            .then(response => response.json())
-            .catch(() => {
-                this.props.history.push('/login');
+            // .then(response => response.json())
+            .then(response => {
+                if (response.status === 200)
+                    return response.json();
+                else
+                    throw response.json().then;
             })
     }
 }

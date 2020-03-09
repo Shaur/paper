@@ -6,7 +6,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     username: comics
     password: comics
-    url: jdbc:postgresql://localhost:5433/comics?createDatabaseIfNotExist=true
+    url: jdbc:postgresql://localhost:5432/comics?createDatabaseIfNotExist=true
   jpa:
     generate-ddl: true
     properties:

@@ -20,10 +20,10 @@ public class Series {
     private Integer startYear;
     private Integer endYear;
     private String publisher;
-    private boolean subscribe = false;
 
     @OneToMany(mappedBy = "series", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     private List<Issue> issues;
+    
 }
