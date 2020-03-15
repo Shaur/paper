@@ -1,0 +1,22 @@
+version: '3.7'
+services:
+  comics-postres:
+    image: postgres:12.2-alpine
+    container_name: comics_postgres
+    environment:
+      POSTGRES_USER: comics
+      POSTGRES_PASSWORD: comics
+    ports:
+      - 5433:5432
+  comics-ui:
+    container_name: comics_ui
+    build:
+      context: ../paper-ui
+    ports:
+      - 80:80
+  comics-downloader:
+    container_name: comics_downloader
+    build:
+      context: ../paper-download
+    ports:
+      - 8081:8081
