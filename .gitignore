@@ -26,6 +26,7 @@
 
 .gradle/**
 gradle/**
+!gradle/wrapper/gradle-wrapper.jar
 
 */.gradle/**
 
